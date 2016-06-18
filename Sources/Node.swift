@@ -79,6 +79,7 @@ public class VariableNode : NodeType {
       return result.description
     }
 
-    return ""
+    print("variable = \((self.variable as? Variable)?.variable)")
+    return (self.variable as? Variable)?.variable ?? ""
   }
 }
